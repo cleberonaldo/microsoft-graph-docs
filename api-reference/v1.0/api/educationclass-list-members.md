@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieves the teachers and students for a class. Note that if the delegated token is used, members can only be seen by other members of the class.
 
+When a class contains more than 100 members, Microsoft Graph returns a @odata.nextLink property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the @odata.nextLink URL in each response, until all the results are returned, as described in paging Microsoft Graph data in your app.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
